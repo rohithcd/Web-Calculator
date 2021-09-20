@@ -1,0 +1,79 @@
+/*variables*/
+:root 
+{
+    --white: #fff;
+}
+/*common styles*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*parent div*/
+.main-div 
+{
+    width: 20rem;
+    height: min-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+}
+
+/*button div*/
+.btn-div 
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/*text box*/
+.text-box-top,
+.btn-num,
+.btn-opt,
+.btn 
+{
+    font-size: 1.4rem;
+}
+
+.text-box-top,
+.text-box 
+{
+    width: 100%;
+    text-align: right;
+    outline: none;
+    border: none;
+}
+
+.text-box-top 
+{
+    height: 4rem;
+}
+
+.text-box 
+{
+    font-size: 2rem;
+    height: 2.5rem;
+    border-bottom: 1px solid black;
+}
+
+/*buttons*/
+.btn-num,
+.btn-opt,
+.btn
+{
+    height: 4.2rem;
+    background-color: var(--white);
+    border: none;
+    cursor: pointer;
+}
+
+.btn-num:active,
+.btn-opt:active,
+.btn:active
+{
+    background-color: purple;
+}
